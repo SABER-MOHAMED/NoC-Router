@@ -1,0 +1,1435 @@
+$date
+	Thu Oct 22 21:47:43 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module mesh_3x3_tb $end
+$var reg 1 ! clk $end
+$var reg 1 " rst_n $end
+$scope module dut $end
+$var wire 1 ! clk $end
+$var wire 1 " rst_n $end
+$scope begin gen_row[0] $end
+$var parameter 2 # y $end
+$scope begin gen_col[0] $end
+$var wire 36 $ e_in [35:0] $end
+$var wire 36 % n_in [35:0] $end
+$var wire 36 & s_in [35:0] $end
+$var wire 36 ' w_in [35:0] $end
+$var parameter 2 ( x $end
+$scope module u_router $end
+$var wire 1 ! clk $end
+$var wire 36 ) east_in [35:0] $end
+$var wire 36 * local_in [35:0] $end
+$var wire 36 + north_in [35:0] $end
+$var wire 1 " rst_n $end
+$var wire 36 , south_in [35:0] $end
+$var wire 36 - west_in [35:0] $end
+$var wire 3 . dir_west [2:0] $end
+$var wire 3 / dir_south [2:0] $end
+$var wire 3 0 dir_north [2:0] $end
+$var wire 3 1 dir_local [2:0] $end
+$var wire 3 2 dir_east [2:0] $end
+$var parameter 32 3 MY_X $end
+$var parameter 32 4 MY_Y $end
+$var reg 36 5 east_next [35:0] $end
+$var reg 36 6 east_out [35:0] $end
+$var reg 36 7 local_next [35:0] $end
+$var reg 36 8 local_out [35:0] $end
+$var reg 36 9 north_next [35:0] $end
+$var reg 36 : north_out [35:0] $end
+$var reg 36 ; south_next [35:0] $end
+$var reg 36 < south_out [35:0] $end
+$var reg 36 = west_next [35:0] $end
+$var reg 36 > west_out [35:0] $end
+$scope module u_route_east $end
+$var wire 2 ? dest_x [1:0] $end
+$var wire 2 @ dest_y [1:0] $end
+$var parameter 32 A MY_X $end
+$var parameter 32 B MY_Y $end
+$var reg 3 C next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_local $end
+$var wire 2 D dest_x [1:0] $end
+$var wire 2 E dest_y [1:0] $end
+$var parameter 32 F MY_X $end
+$var parameter 32 G MY_Y $end
+$var reg 3 H next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_north $end
+$var wire 2 I dest_x [1:0] $end
+$var wire 2 J dest_y [1:0] $end
+$var parameter 32 K MY_X $end
+$var parameter 32 L MY_Y $end
+$var reg 3 M next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_south $end
+$var wire 2 N dest_x [1:0] $end
+$var wire 2 O dest_y [1:0] $end
+$var parameter 32 P MY_X $end
+$var parameter 32 Q MY_Y $end
+$var reg 3 R next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_west $end
+$var wire 2 S dest_x [1:0] $end
+$var wire 2 T dest_y [1:0] $end
+$var parameter 32 U MY_X $end
+$var parameter 32 V MY_Y $end
+$var reg 3 W next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin gen_col[1] $end
+$var wire 36 X e_in [35:0] $end
+$var wire 36 Y n_in [35:0] $end
+$var wire 36 Z s_in [35:0] $end
+$var wire 36 [ w_in [35:0] $end
+$var parameter 2 \ x $end
+$scope module u_router $end
+$var wire 1 ! clk $end
+$var wire 36 ] east_in [35:0] $end
+$var wire 36 ^ local_in [35:0] $end
+$var wire 36 _ north_in [35:0] $end
+$var wire 1 " rst_n $end
+$var wire 36 ` south_in [35:0] $end
+$var wire 36 a west_in [35:0] $end
+$var wire 3 b dir_west [2:0] $end
+$var wire 3 c dir_south [2:0] $end
+$var wire 3 d dir_north [2:0] $end
+$var wire 3 e dir_local [2:0] $end
+$var wire 3 f dir_east [2:0] $end
+$var parameter 32 g MY_X $end
+$var parameter 32 h MY_Y $end
+$var reg 36 i east_next [35:0] $end
+$var reg 36 j east_out [35:0] $end
+$var reg 36 k local_next [35:0] $end
+$var reg 36 l local_out [35:0] $end
+$var reg 36 m north_next [35:0] $end
+$var reg 36 n north_out [35:0] $end
+$var reg 36 o south_next [35:0] $end
+$var reg 36 p south_out [35:0] $end
+$var reg 36 q west_next [35:0] $end
+$var reg 36 r west_out [35:0] $end
+$scope module u_route_east $end
+$var wire 2 s dest_x [1:0] $end
+$var wire 2 t dest_y [1:0] $end
+$var parameter 32 u MY_X $end
+$var parameter 32 v MY_Y $end
+$var reg 3 w next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_local $end
+$var wire 2 x dest_x [1:0] $end
+$var wire 2 y dest_y [1:0] $end
+$var parameter 32 z MY_X $end
+$var parameter 32 { MY_Y $end
+$var reg 3 | next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_north $end
+$var wire 2 } dest_x [1:0] $end
+$var wire 2 ~ dest_y [1:0] $end
+$var parameter 32 !" MY_X $end
+$var parameter 32 "" MY_Y $end
+$var reg 3 #" next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_south $end
+$var wire 2 $" dest_x [1:0] $end
+$var wire 2 %" dest_y [1:0] $end
+$var parameter 32 &" MY_X $end
+$var parameter 32 '" MY_Y $end
+$var reg 3 (" next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_west $end
+$var wire 2 )" dest_x [1:0] $end
+$var wire 2 *" dest_y [1:0] $end
+$var parameter 32 +" MY_X $end
+$var parameter 32 ," MY_Y $end
+$var reg 3 -" next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin gen_col[2] $end
+$var wire 36 ." e_in [35:0] $end
+$var wire 36 /" n_in [35:0] $end
+$var wire 36 0" s_in [35:0] $end
+$var wire 36 1" w_in [35:0] $end
+$var parameter 3 2" x $end
+$scope module u_router $end
+$var wire 1 ! clk $end
+$var wire 36 3" east_in [35:0] $end
+$var wire 36 4" local_in [35:0] $end
+$var wire 36 5" north_in [35:0] $end
+$var wire 1 " rst_n $end
+$var wire 36 6" south_in [35:0] $end
+$var wire 36 7" west_in [35:0] $end
+$var wire 3 8" dir_west [2:0] $end
+$var wire 3 9" dir_south [2:0] $end
+$var wire 3 :" dir_north [2:0] $end
+$var wire 3 ;" dir_local [2:0] $end
+$var wire 3 <" dir_east [2:0] $end
+$var parameter 32 =" MY_X $end
+$var parameter 32 >" MY_Y $end
+$var reg 36 ?" east_next [35:0] $end
+$var reg 36 @" east_out [35:0] $end
+$var reg 36 A" local_next [35:0] $end
+$var reg 36 B" local_out [35:0] $end
+$var reg 36 C" north_next [35:0] $end
+$var reg 36 D" north_out [35:0] $end
+$var reg 36 E" south_next [35:0] $end
+$var reg 36 F" south_out [35:0] $end
+$var reg 36 G" west_next [35:0] $end
+$var reg 36 H" west_out [35:0] $end
+$scope module u_route_east $end
+$var wire 2 I" dest_x [1:0] $end
+$var wire 2 J" dest_y [1:0] $end
+$var parameter 32 K" MY_X $end
+$var parameter 32 L" MY_Y $end
+$var reg 3 M" next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_local $end
+$var wire 2 N" dest_x [1:0] $end
+$var wire 2 O" dest_y [1:0] $end
+$var parameter 32 P" MY_X $end
+$var parameter 32 Q" MY_Y $end
+$var reg 3 R" next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_north $end
+$var wire 2 S" dest_x [1:0] $end
+$var wire 2 T" dest_y [1:0] $end
+$var parameter 32 U" MY_X $end
+$var parameter 32 V" MY_Y $end
+$var reg 3 W" next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_south $end
+$var wire 2 X" dest_x [1:0] $end
+$var wire 2 Y" dest_y [1:0] $end
+$var parameter 32 Z" MY_X $end
+$var parameter 32 [" MY_Y $end
+$var reg 3 \" next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_west $end
+$var wire 2 ]" dest_x [1:0] $end
+$var wire 2 ^" dest_y [1:0] $end
+$var parameter 32 _" MY_X $end
+$var parameter 32 `" MY_Y $end
+$var reg 3 a" next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin gen_row[1] $end
+$var parameter 2 b" y $end
+$scope begin gen_col[0] $end
+$var wire 36 c" e_in [35:0] $end
+$var wire 36 d" n_in [35:0] $end
+$var wire 36 e" s_in [35:0] $end
+$var wire 36 f" w_in [35:0] $end
+$var parameter 2 g" x $end
+$scope module u_router $end
+$var wire 1 ! clk $end
+$var wire 36 h" east_in [35:0] $end
+$var wire 36 i" local_in [35:0] $end
+$var wire 36 j" north_in [35:0] $end
+$var wire 1 " rst_n $end
+$var wire 36 k" south_in [35:0] $end
+$var wire 36 l" west_in [35:0] $end
+$var wire 3 m" dir_west [2:0] $end
+$var wire 3 n" dir_south [2:0] $end
+$var wire 3 o" dir_north [2:0] $end
+$var wire 3 p" dir_local [2:0] $end
+$var wire 3 q" dir_east [2:0] $end
+$var parameter 32 r" MY_X $end
+$var parameter 32 s" MY_Y $end
+$var reg 36 t" east_next [35:0] $end
+$var reg 36 u" east_out [35:0] $end
+$var reg 36 v" local_next [35:0] $end
+$var reg 36 w" local_out [35:0] $end
+$var reg 36 x" north_next [35:0] $end
+$var reg 36 y" north_out [35:0] $end
+$var reg 36 z" south_next [35:0] $end
+$var reg 36 {" south_out [35:0] $end
+$var reg 36 |" west_next [35:0] $end
+$var reg 36 }" west_out [35:0] $end
+$scope module u_route_east $end
+$var wire 2 ~" dest_x [1:0] $end
+$var wire 2 !# dest_y [1:0] $end
+$var parameter 32 "# MY_X $end
+$var parameter 32 ## MY_Y $end
+$var reg 3 $# next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_local $end
+$var wire 2 %# dest_x [1:0] $end
+$var wire 2 &# dest_y [1:0] $end
+$var parameter 32 '# MY_X $end
+$var parameter 32 (# MY_Y $end
+$var reg 3 )# next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_north $end
+$var wire 2 *# dest_x [1:0] $end
+$var wire 2 +# dest_y [1:0] $end
+$var parameter 32 ,# MY_X $end
+$var parameter 32 -# MY_Y $end
+$var reg 3 .# next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_south $end
+$var wire 2 /# dest_x [1:0] $end
+$var wire 2 0# dest_y [1:0] $end
+$var parameter 32 1# MY_X $end
+$var parameter 32 2# MY_Y $end
+$var reg 3 3# next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_west $end
+$var wire 2 4# dest_x [1:0] $end
+$var wire 2 5# dest_y [1:0] $end
+$var parameter 32 6# MY_X $end
+$var parameter 32 7# MY_Y $end
+$var reg 3 8# next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin gen_col[1] $end
+$var wire 36 9# e_in [35:0] $end
+$var wire 36 :# n_in [35:0] $end
+$var wire 36 ;# s_in [35:0] $end
+$var wire 36 <# w_in [35:0] $end
+$var parameter 2 =# x $end
+$scope module u_router $end
+$var wire 1 ! clk $end
+$var wire 36 ># east_in [35:0] $end
+$var wire 36 ?# local_in [35:0] $end
+$var wire 36 @# north_in [35:0] $end
+$var wire 1 " rst_n $end
+$var wire 36 A# south_in [35:0] $end
+$var wire 36 B# west_in [35:0] $end
+$var wire 3 C# dir_west [2:0] $end
+$var wire 3 D# dir_south [2:0] $end
+$var wire 3 E# dir_north [2:0] $end
+$var wire 3 F# dir_local [2:0] $end
+$var wire 3 G# dir_east [2:0] $end
+$var parameter 32 H# MY_X $end
+$var parameter 32 I# MY_Y $end
+$var reg 36 J# east_next [35:0] $end
+$var reg 36 K# east_out [35:0] $end
+$var reg 36 L# local_next [35:0] $end
+$var reg 36 M# local_out [35:0] $end
+$var reg 36 N# north_next [35:0] $end
+$var reg 36 O# north_out [35:0] $end
+$var reg 36 P# south_next [35:0] $end
+$var reg 36 Q# south_out [35:0] $end
+$var reg 36 R# west_next [35:0] $end
+$var reg 36 S# west_out [35:0] $end
+$scope module u_route_east $end
+$var wire 2 T# dest_x [1:0] $end
+$var wire 2 U# dest_y [1:0] $end
+$var parameter 32 V# MY_X $end
+$var parameter 32 W# MY_Y $end
+$var reg 3 X# next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_local $end
+$var wire 2 Y# dest_x [1:0] $end
+$var wire 2 Z# dest_y [1:0] $end
+$var parameter 32 [# MY_X $end
+$var parameter 32 \# MY_Y $end
+$var reg 3 ]# next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_north $end
+$var wire 2 ^# dest_x [1:0] $end
+$var wire 2 _# dest_y [1:0] $end
+$var parameter 32 `# MY_X $end
+$var parameter 32 a# MY_Y $end
+$var reg 3 b# next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_south $end
+$var wire 2 c# dest_x [1:0] $end
+$var wire 2 d# dest_y [1:0] $end
+$var parameter 32 e# MY_X $end
+$var parameter 32 f# MY_Y $end
+$var reg 3 g# next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_west $end
+$var wire 2 h# dest_x [1:0] $end
+$var wire 2 i# dest_y [1:0] $end
+$var parameter 32 j# MY_X $end
+$var parameter 32 k# MY_Y $end
+$var reg 3 l# next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin gen_col[2] $end
+$var wire 36 m# e_in [35:0] $end
+$var wire 36 n# n_in [35:0] $end
+$var wire 36 o# s_in [35:0] $end
+$var wire 36 p# w_in [35:0] $end
+$var parameter 3 q# x $end
+$scope module u_router $end
+$var wire 1 ! clk $end
+$var wire 36 r# east_in [35:0] $end
+$var wire 36 s# local_in [35:0] $end
+$var wire 36 t# north_in [35:0] $end
+$var wire 1 " rst_n $end
+$var wire 36 u# south_in [35:0] $end
+$var wire 36 v# west_in [35:0] $end
+$var wire 3 w# dir_west [2:0] $end
+$var wire 3 x# dir_south [2:0] $end
+$var wire 3 y# dir_north [2:0] $end
+$var wire 3 z# dir_local [2:0] $end
+$var wire 3 {# dir_east [2:0] $end
+$var parameter 32 |# MY_X $end
+$var parameter 32 }# MY_Y $end
+$var reg 36 ~# east_next [35:0] $end
+$var reg 36 !$ east_out [35:0] $end
+$var reg 36 "$ local_next [35:0] $end
+$var reg 36 #$ local_out [35:0] $end
+$var reg 36 $$ north_next [35:0] $end
+$var reg 36 %$ north_out [35:0] $end
+$var reg 36 &$ south_next [35:0] $end
+$var reg 36 '$ south_out [35:0] $end
+$var reg 36 ($ west_next [35:0] $end
+$var reg 36 )$ west_out [35:0] $end
+$scope module u_route_east $end
+$var wire 2 *$ dest_x [1:0] $end
+$var wire 2 +$ dest_y [1:0] $end
+$var parameter 32 ,$ MY_X $end
+$var parameter 32 -$ MY_Y $end
+$var reg 3 .$ next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_local $end
+$var wire 2 /$ dest_x [1:0] $end
+$var wire 2 0$ dest_y [1:0] $end
+$var parameter 32 1$ MY_X $end
+$var parameter 32 2$ MY_Y $end
+$var reg 3 3$ next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_north $end
+$var wire 2 4$ dest_x [1:0] $end
+$var wire 2 5$ dest_y [1:0] $end
+$var parameter 32 6$ MY_X $end
+$var parameter 32 7$ MY_Y $end
+$var reg 3 8$ next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_south $end
+$var wire 2 9$ dest_x [1:0] $end
+$var wire 2 :$ dest_y [1:0] $end
+$var parameter 32 ;$ MY_X $end
+$var parameter 32 <$ MY_Y $end
+$var reg 3 =$ next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_west $end
+$var wire 2 >$ dest_x [1:0] $end
+$var wire 2 ?$ dest_y [1:0] $end
+$var parameter 32 @$ MY_X $end
+$var parameter 32 A$ MY_Y $end
+$var reg 3 B$ next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin gen_row[2] $end
+$var parameter 3 C$ y $end
+$scope begin gen_col[0] $end
+$var wire 36 D$ e_in [35:0] $end
+$var wire 36 E$ n_in [35:0] $end
+$var wire 36 F$ s_in [35:0] $end
+$var wire 36 G$ w_in [35:0] $end
+$var parameter 2 H$ x $end
+$scope module u_router $end
+$var wire 1 ! clk $end
+$var wire 36 I$ east_in [35:0] $end
+$var wire 36 J$ local_in [35:0] $end
+$var wire 36 K$ north_in [35:0] $end
+$var wire 1 " rst_n $end
+$var wire 36 L$ south_in [35:0] $end
+$var wire 36 M$ west_in [35:0] $end
+$var wire 3 N$ dir_west [2:0] $end
+$var wire 3 O$ dir_south [2:0] $end
+$var wire 3 P$ dir_north [2:0] $end
+$var wire 3 Q$ dir_local [2:0] $end
+$var wire 3 R$ dir_east [2:0] $end
+$var parameter 32 S$ MY_X $end
+$var parameter 32 T$ MY_Y $end
+$var reg 36 U$ east_next [35:0] $end
+$var reg 36 V$ east_out [35:0] $end
+$var reg 36 W$ local_next [35:0] $end
+$var reg 36 X$ local_out [35:0] $end
+$var reg 36 Y$ north_next [35:0] $end
+$var reg 36 Z$ north_out [35:0] $end
+$var reg 36 [$ south_next [35:0] $end
+$var reg 36 \$ south_out [35:0] $end
+$var reg 36 ]$ west_next [35:0] $end
+$var reg 36 ^$ west_out [35:0] $end
+$scope module u_route_east $end
+$var wire 2 _$ dest_x [1:0] $end
+$var wire 2 `$ dest_y [1:0] $end
+$var parameter 32 a$ MY_X $end
+$var parameter 32 b$ MY_Y $end
+$var reg 3 c$ next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_local $end
+$var wire 2 d$ dest_x [1:0] $end
+$var wire 2 e$ dest_y [1:0] $end
+$var parameter 32 f$ MY_X $end
+$var parameter 32 g$ MY_Y $end
+$var reg 3 h$ next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_north $end
+$var wire 2 i$ dest_x [1:0] $end
+$var wire 2 j$ dest_y [1:0] $end
+$var parameter 32 k$ MY_X $end
+$var parameter 32 l$ MY_Y $end
+$var reg 3 m$ next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_south $end
+$var wire 2 n$ dest_x [1:0] $end
+$var wire 2 o$ dest_y [1:0] $end
+$var parameter 32 p$ MY_X $end
+$var parameter 32 q$ MY_Y $end
+$var reg 3 r$ next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_west $end
+$var wire 2 s$ dest_x [1:0] $end
+$var wire 2 t$ dest_y [1:0] $end
+$var parameter 32 u$ MY_X $end
+$var parameter 32 v$ MY_Y $end
+$var reg 3 w$ next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin gen_col[1] $end
+$var wire 36 x$ e_in [35:0] $end
+$var wire 36 y$ n_in [35:0] $end
+$var wire 36 z$ s_in [35:0] $end
+$var wire 36 {$ w_in [35:0] $end
+$var parameter 2 |$ x $end
+$scope module u_router $end
+$var wire 1 ! clk $end
+$var wire 36 }$ east_in [35:0] $end
+$var wire 36 ~$ local_in [35:0] $end
+$var wire 36 !% north_in [35:0] $end
+$var wire 1 " rst_n $end
+$var wire 36 "% south_in [35:0] $end
+$var wire 36 #% west_in [35:0] $end
+$var wire 3 $% dir_west [2:0] $end
+$var wire 3 %% dir_south [2:0] $end
+$var wire 3 &% dir_north [2:0] $end
+$var wire 3 '% dir_local [2:0] $end
+$var wire 3 (% dir_east [2:0] $end
+$var parameter 32 )% MY_X $end
+$var parameter 32 *% MY_Y $end
+$var reg 36 +% east_next [35:0] $end
+$var reg 36 ,% east_out [35:0] $end
+$var reg 36 -% local_next [35:0] $end
+$var reg 36 .% local_out [35:0] $end
+$var reg 36 /% north_next [35:0] $end
+$var reg 36 0% north_out [35:0] $end
+$var reg 36 1% south_next [35:0] $end
+$var reg 36 2% south_out [35:0] $end
+$var reg 36 3% west_next [35:0] $end
+$var reg 36 4% west_out [35:0] $end
+$scope module u_route_east $end
+$var wire 2 5% dest_x [1:0] $end
+$var wire 2 6% dest_y [1:0] $end
+$var parameter 32 7% MY_X $end
+$var parameter 32 8% MY_Y $end
+$var reg 3 9% next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_local $end
+$var wire 2 :% dest_x [1:0] $end
+$var wire 2 ;% dest_y [1:0] $end
+$var parameter 32 <% MY_X $end
+$var parameter 32 =% MY_Y $end
+$var reg 3 >% next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_north $end
+$var wire 2 ?% dest_x [1:0] $end
+$var wire 2 @% dest_y [1:0] $end
+$var parameter 32 A% MY_X $end
+$var parameter 32 B% MY_Y $end
+$var reg 3 C% next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_south $end
+$var wire 2 D% dest_x [1:0] $end
+$var wire 2 E% dest_y [1:0] $end
+$var parameter 32 F% MY_X $end
+$var parameter 32 G% MY_Y $end
+$var reg 3 H% next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_west $end
+$var wire 2 I% dest_x [1:0] $end
+$var wire 2 J% dest_y [1:0] $end
+$var parameter 32 K% MY_X $end
+$var parameter 32 L% MY_Y $end
+$var reg 3 M% next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin gen_col[2] $end
+$var wire 36 N% e_in [35:0] $end
+$var wire 36 O% n_in [35:0] $end
+$var wire 36 P% s_in [35:0] $end
+$var wire 36 Q% w_in [35:0] $end
+$var parameter 3 R% x $end
+$scope module u_router $end
+$var wire 1 ! clk $end
+$var wire 36 S% east_in [35:0] $end
+$var wire 36 T% local_in [35:0] $end
+$var wire 36 U% north_in [35:0] $end
+$var wire 1 " rst_n $end
+$var wire 36 V% south_in [35:0] $end
+$var wire 36 W% west_in [35:0] $end
+$var wire 3 X% dir_west [2:0] $end
+$var wire 3 Y% dir_south [2:0] $end
+$var wire 3 Z% dir_north [2:0] $end
+$var wire 3 [% dir_local [2:0] $end
+$var wire 3 \% dir_east [2:0] $end
+$var parameter 32 ]% MY_X $end
+$var parameter 32 ^% MY_Y $end
+$var reg 36 _% east_next [35:0] $end
+$var reg 36 `% east_out [35:0] $end
+$var reg 36 a% local_next [35:0] $end
+$var reg 36 b% local_out [35:0] $end
+$var reg 36 c% north_next [35:0] $end
+$var reg 36 d% north_out [35:0] $end
+$var reg 36 e% south_next [35:0] $end
+$var reg 36 f% south_out [35:0] $end
+$var reg 36 g% west_next [35:0] $end
+$var reg 36 h% west_out [35:0] $end
+$scope module u_route_east $end
+$var wire 2 i% dest_x [1:0] $end
+$var wire 2 j% dest_y [1:0] $end
+$var parameter 32 k% MY_X $end
+$var parameter 32 l% MY_Y $end
+$var reg 3 m% next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_local $end
+$var wire 2 n% dest_x [1:0] $end
+$var wire 2 o% dest_y [1:0] $end
+$var parameter 32 p% MY_X $end
+$var parameter 32 q% MY_Y $end
+$var reg 3 r% next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_north $end
+$var wire 2 s% dest_x [1:0] $end
+$var wire 2 t% dest_y [1:0] $end
+$var parameter 32 u% MY_X $end
+$var parameter 32 v% MY_Y $end
+$var reg 3 w% next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_south $end
+$var wire 2 x% dest_x [1:0] $end
+$var wire 2 y% dest_y [1:0] $end
+$var parameter 32 z% MY_X $end
+$var parameter 32 {% MY_Y $end
+$var reg 3 |% next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$scope module u_route_west $end
+$var wire 2 }% dest_x [1:0] $end
+$var wire 2 ~% dest_y [1:0] $end
+$var parameter 32 !& MY_X $end
+$var parameter 32 "& MY_Y $end
+$var reg 3 #& next_dir [2:0] $end
+$scope begin xy_routing $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10 "&
+b10 !&
+b10 {%
+b10 z%
+b10 v%
+b10 u%
+b10 q%
+b10 p%
+b10 l%
+b10 k%
+b10 ^%
+b10 ]%
+b10 R%
+b10 L%
+b1 K%
+b10 G%
+b1 F%
+b10 B%
+b1 A%
+b10 =%
+b1 <%
+b10 8%
+b1 7%
+b10 *%
+b1 )%
+b1 |$
+b10 v$
+b0 u$
+b10 q$
+b0 p$
+b10 l$
+b0 k$
+b10 g$
+b0 f$
+b10 b$
+b0 a$
+b10 T$
+b0 S$
+b0 H$
+b10 C$
+b1 A$
+b10 @$
+b1 <$
+b10 ;$
+b1 7$
+b10 6$
+b1 2$
+b10 1$
+b1 -$
+b10 ,$
+b1 }#
+b10 |#
+b10 q#
+b1 k#
+b1 j#
+b1 f#
+b1 e#
+b1 a#
+b1 `#
+b1 \#
+b1 [#
+b1 W#
+b1 V#
+b1 I#
+b1 H#
+b1 =#
+b1 7#
+b0 6#
+b1 2#
+b0 1#
+b1 -#
+b0 ,#
+b1 (#
+b0 '#
+b1 ##
+b0 "#
+b1 s"
+b0 r"
+b0 g"
+b1 b"
+b0 `"
+b10 _"
+b0 ["
+b10 Z"
+b0 V"
+b10 U"
+b0 Q"
+b10 P"
+b0 L"
+b10 K"
+b0 >"
+b10 ="
+b10 2"
+b0 ,"
+b1 +"
+b0 '"
+b1 &"
+b0 ""
+b1 !"
+b0 {
+b1 z
+b0 v
+b1 u
+b0 h
+b1 g
+b1 \
+b0 V
+b0 U
+b0 Q
+b0 P
+b0 L
+b0 K
+b0 G
+b0 F
+b0 B
+b0 A
+b0 4
+b0 3
+b0 (
+b0 #
+$end
+#0
+$dumpvars
+b0 #&
+bx ~%
+bx }%
+b100 |%
+b0 y%
+b0 x%
+b0 w%
+bx t%
+bx s%
+b0 r%
+bx o%
+bx n%
+b100 m%
+b0 j%
+b0 i%
+bx h%
+b0 g%
+bx f%
+b0 e%
+bx d%
+b0 c%
+bx b%
+b0 a%
+bx `%
+b0 _%
+b100 \%
+b0 [%
+b0 Z%
+b100 Y%
+b0 X%
+bx W%
+b0 V%
+bx U%
+bx T%
+b0 S%
+bx Q%
+b0 P%
+bx O%
+b0 N%
+b0 M%
+bx J%
+bx I%
+b100 H%
+b0 E%
+b0 D%
+b0 C%
+bx @%
+bx ?%
+b0 >%
+bx ;%
+bx :%
+b0 9%
+bx 6%
+bx 5%
+bx 4%
+b0 3%
+bx 2%
+b0 1%
+bx 0%
+b0 /%
+bx .%
+b0 -%
+bx ,%
+b0 +%
+b0 (%
+b0 '%
+b0 &%
+b100 %%
+b0 $%
+bx #%
+b0 "%
+bx !%
+bx ~$
+bx }$
+bx {$
+b0 z$
+bx y$
+bx x$
+b1 w$
+b0 t$
+b0 s$
+b1 r$
+b0 o$
+b0 n$
+b0 m$
+bx j$
+bx i$
+b0 h$
+bx e$
+bx d$
+b0 c$
+bx `$
+bx _$
+bx ^$
+b0 ]$
+bx \$
+b0 [$
+bx Z$
+b0 Y$
+bx X$
+b0 W$
+bx V$
+b0 U$
+b0 R$
+b0 Q$
+b0 P$
+b1 O$
+b1 N$
+b0 M$
+b0 L$
+bx K$
+bx J$
+bx I$
+b0 G$
+b0 F$
+bx E$
+bx D$
+b0 B$
+bx ?$
+bx >$
+b0 =$
+bx :$
+bx 9$
+b0 8$
+bx 5$
+bx 4$
+b0 3$
+bx 0$
+bx /$
+b100 .$
+b0 +$
+b0 *$
+bx )$
+b0 ($
+bx '$
+b0 &$
+bx %$
+b0 $$
+bx #$
+b0 "$
+bx !$
+b0 ~#
+b100 {#
+b0 z#
+b0 y#
+b0 x#
+b0 w#
+bx v#
+bx u#
+bx t#
+bx s#
+b0 r#
+bx p#
+bx o#
+bx n#
+b0 m#
+b0 l#
+bx i#
+bx h#
+b0 g#
+bx d#
+bx c#
+b0 b#
+bx _#
+bx ^#
+b0 ]#
+bx Z#
+bx Y#
+b0 X#
+bx U#
+bx T#
+bx S#
+b0 R#
+bx Q#
+b0 P#
+bx O#
+b0 N#
+bx M#
+b0 L#
+bx K#
+b0 J#
+b0 G#
+b0 F#
+b0 E#
+b0 D#
+b0 C#
+bx B#
+bx A#
+bx @#
+bx ?#
+bx >#
+bx <#
+bx ;#
+bx :#
+bx 9#
+b1 8#
+b0 5#
+b0 4#
+b0 3#
+bx 0#
+bx /#
+b0 .#
+bx +#
+bx *#
+b0 )#
+bx &#
+bx %#
+b0 $#
+bx !#
+bx ~"
+bx }"
+b0 |"
+bx {"
+b0 z"
+bx y"
+b0 x"
+bx w"
+b0 v"
+bx u"
+b0 t"
+b0 q"
+b0 p"
+b0 o"
+b0 n"
+b1 m"
+b0 l"
+bx k"
+bx j"
+bx i"
+bx h"
+b0 f"
+bx e"
+bx d"
+bx c"
+b0 a"
+bx ^"
+bx ]"
+b0 \"
+bx Y"
+bx X"
+b100 W"
+b0 T"
+b0 S"
+b0 R"
+bx O"
+bx N"
+b100 M"
+b0 J"
+b0 I"
+bx H"
+b0 G"
+bx F"
+b0 E"
+bx D"
+b0 C"
+bx B"
+b0 A"
+bx @"
+b0 ?"
+b100 <"
+b0 ;"
+b100 :"
+b0 9"
+b0 8"
+bx 7"
+bx 6"
+b0 5"
+bx 4"
+b0 3"
+bx 1"
+bx 0"
+b0 /"
+b0 ."
+b0 -"
+bx *"
+bx )"
+b0 ("
+bx %"
+bx $"
+b100 #"
+b0 ~
+b0 }
+b0 |
+bx y
+bx x
+b0 w
+bx t
+bx s
+bx r
+b0 q
+bx p
+b0 o
+bx n
+b0 m
+bx l
+b0 k
+bx j
+b0 i
+b0 f
+b0 e
+b100 d
+b0 c
+b0 b
+bx a
+bx `
+b0 _
+bx ^
+bx ]
+bx [
+bx Z
+b0 Y
+bx X
+b0 W
+b0 T
+b0 S
+b0 R
+bx O
+bx N
+b0 M
+b0 J
+b0 I
+b0 H
+bx E
+bx D
+b0 C
+bx @
+bx ?
+bx >
+b0 =
+bx <
+b0 ;
+bx :
+b0 9
+bx 8
+b0 7
+bx 6
+b0 5
+b0 2
+b0 1
+b0 0
+b0 /
+b0 .
+b0 -
+bx ,
+b0 +
+bx *
+bx )
+b0 '
+bx &
+b0 %
+bx $
+0"
+0!
+$end
+#5000
+b100 b
+b100 -"
+b1 o"
+b1 .#
+b100 8"
+b100 a"
+b100 E#
+b100 b#
+b100 f
+b100 w
+b100 y#
+b100 8$
+b100 C#
+b100 l#
+b1 P$
+b1 m$
+b100 w#
+b100 B$
+b1 q"
+b1 $#
+b100 &%
+b100 C%
+b100 c
+b100 ("
+b100 G#
+b100 X#
+b100 Z%
+b100 w%
+b100 9"
+b100 \"
+b100 $%
+b100 M%
+b1 n"
+b1 3#
+b100 X%
+b100 #&
+b1 R$
+b1 c$
+b100 D#
+b100 g#
+b100 (%
+b100 9%
+b100 x#
+b100 =$
+b0 )"
+b0 *"
+b0 *#
+b0 +#
+b0 ]"
+b0 ^"
+b0 ?
+b0 @
+b0 ^#
+b0 _#
+b0 s
+b0 t
+b0 4$
+b0 5$
+b0 h#
+b0 i#
+b0 i$
+b0 j$
+b0 N
+b0 O
+b0 >$
+b0 ?$
+b0 ~"
+b0 !#
+b0 ?%
+b0 @%
+b0 $"
+b0 %"
+b0 T#
+b0 U#
+b0 s%
+b0 t%
+b0 X"
+b0 Y"
+b0 I%
+b0 J%
+b0 /#
+b0 0#
+b0 }%
+b0 ~%
+b0 _$
+b0 `$
+b0 c#
+b0 d#
+b0 5%
+b0 6%
+b0 9$
+b0 :$
+b0 [
+b0 a
+b0 6
+b0 >
+b0 d"
+b0 j"
+b0 <
+b0 :
+b0 8
+b0 1"
+b0 7"
+b0 j
+b0 $
+b0 )
+b0 r
+b0 :#
+b0 @#
+b0 p
+b0 n
+b0 l
+b0 @"
+b0 X
+b0 ]
+b0 H"
+b0 n#
+b0 t#
+b0 F"
+b0 D"
+b0 B"
+b0 <#
+b0 B#
+b0 u"
+b0 }"
+b0 E$
+b0 K$
+b0 {"
+b0 &
+b0 ,
+b0 y"
+b0 w"
+b0 p#
+b0 v#
+b0 K#
+b0 c"
+b0 h"
+b0 S#
+b0 y$
+b0 !%
+b0 Q#
+b0 Z
+b0 `
+b0 O#
+b0 M#
+b0 !$
+b0 9#
+b0 >#
+b0 )$
+b0 O%
+b0 U%
+b0 '$
+b0 0"
+b0 6"
+b0 %$
+b0 #$
+b0 {$
+b0 #%
+b0 V$
+b0 ^$
+b0 \$
+b0 e"
+b0 k"
+b0 Z$
+b0 X$
+b0 Q%
+b0 W%
+b0 ,%
+b0 D$
+b0 I$
+b0 4%
+b0 2%
+b0 ;#
+b0 A#
+b0 0%
+b0 .%
+b0 `%
+b0 x$
+b0 }$
+b0 h%
+b0 f%
+b0 o#
+b0 u#
+b0 d%
+b0 b%
+1!
+#10000
+0!
+#15000
+1!
+#20000
+0!
+1"
+#25000
+b100010001000100010001000100010001 5
+b11 1
+b11 H
+b0 7
+b1 D
+b0 E
+b100010001000100010001000100010001 *
+1!
+#30000
+0!
+#35000
+b100010001000100010001000100010001 k
+b0 b
+b0 -"
+b1 )"
+b100010001000100010001000100010001 [
+b100010001000100010001000100010001 a
+b100010001000100010001000100010001 6
+1!
+#40000
+0!
+#45000
+b100010001000100010001000100010001 l
+1!
+#50000
+0!
+#55000
+1!
+#60000
+0!
+#65000
+1!
