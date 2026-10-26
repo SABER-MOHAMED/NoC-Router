@@ -87,7 +87,7 @@ module mesh_3x3_tb;
         receive_packet(2'd2, 2'd2, rx_payload, 20);
 
         if (rx_payload == 32'hDEAD_BEEF) begin
-            $display("Packet received successfully! (0,0) -> (2,2) Payload: 0x%h, in %0d cycles", rx_payload);
+            $display("Packet received successfully! (0,0) -> (2,2) Payload: 0x%h", rx_payload);
         end else begin
             $display("Expected 0xDEAD_BEEF, got 0x%h", rx_payload);
         end
