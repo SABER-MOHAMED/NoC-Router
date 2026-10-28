@@ -82,19 +82,46 @@ module mesh_3x3_tb;
         #20;
         rst_n = 1; 
 
-        // send packet from (0,0) to (2,2)
-        send_packet(2'd0, 2'd0, 2'd2, 2'd2, 32'hDEAD_BEEF);
-        receive_packet(2'd2, 2'd2, rx_payload, 20);
+        // START SCENARIO 1
+        // 4-hop: send packet from (0,0) to (2,2)
+        // send_packet(2'd0, 2'd0, 2'd2, 2'd2, 32'hDEAD_BEEF);
+        // receive_packet(2'd2, 2'd2, rx_payload, 20);
 
-        if (rx_payload == 32'hDEAD_BEEF) begin
-            $display("Packet received successfully! (0,0) -> (2,2) Payload: 0x%h", rx_payload);
+        // if (rx_payload == 32'hDEAD_BEEF) begin
+        //     $display("Packet received successfully! (0,0) -> (2,2) Payload: 0x%h", rx_payload);
+        // end else begin
+        //     $display("Expected 0xDEAD_BEEF, got 0x%h", rx_payload);
+        // end
+        // END SCENARIO 1
+
+        // START SCENARIO 2
+        // 1-hop adjacent neighbor: (0,0) -> (1,0)
+        // send_packet(2'd0, 2'd0, 2'd1, 2'd0, 32'h1234_1234);        
+        // receive_packet(2'd1, 2'd0, rx_payload, 20);
+        
+        // if (rx_payload == 32'h1234_1234) begin
+        //     $display("Packet received successfully! (0,0) -> (1,0) Payload: 0x%h", rx_payload);
+        // end else begin
+        //     $display("Expected 0x1234_1234, got 0x%h", rx_payload);
+        // end
+        // END SCENARIO 2
+
+        // START SCENARIO 3:
+        // test 2: Vertical hop: (0,0) -> (0,2)
+        send_packet(2'd0, 2'd0, 2'd0, 2'd2, 32'h1234_5678);
+        receive_packet(2'd0, 2'd2, rx_payload, 20);
+
+        if (rx_payload == 32'h1234_5678) begin
+            $display("Packet received successfully! (0,0) -> (0,2) Payload: 0x%h", rx_payload);
         end else begin
-            $display("Expected 0xDEAD_BEEF, got 0x%h", rx_payload);
+            $display("Expected 0x1234_5678, got 0x%h", rx_payload);
+            
         end
+        // END SCENARIO 3:
 
-        // Wait 2 extra cycles to see output drain, then finish
+        // Wait 2 extra cycles before finishing
         repeat (2) @(posedge clk);
-        $display("\n>>> Simulation complete! Open waveforms to view the packets moving. <<<\n");
+        $display("------simulation complete------");
         $finish;
     end
 endmodule : mesh_3x3_tb

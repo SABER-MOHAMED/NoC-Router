@@ -23,7 +23,7 @@ module router #(
 );
 
     // =========================================================================
-    // 1. Next-Hop Direction for each input port
+    // 1. next-hop Direction for each input port
     // =========================================================================
     direction_t dir_local, dir_north, dir_south, dir_east, dir_west;
 
