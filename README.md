@@ -1,17 +1,26 @@
 # NoC Router
-This is a multi hop, 2d-mesh NoC Simulator written in System verilog.
 
-it simulates how multiple processing units or cores communicate with each other in a chip (many-core architecture).
+A 3×3 mesh in SystemVerilog. Each router uses XY routing and holds a packet for one clock before forwarding it.
 
-the project is basically a hardware router that takes incoming data packets, figures out where they need to go (North, South, west  or East) and routes them to the correct output port.
+The git tag [`v0.1-xy-mesh`](https://github.com/SABER-MOHAMED/NoC-Router/tree/v0.1-xy-mesh) is this version: the diagonal route below is what `make mesh` runs. Later steps are in [ROADMAP.md](ROADMAP.md).
 
-The main goal of the project is to build the router from scratch and understand its components , and how they work together to route packets, we aim to simulate the design correctness using waveform inspection
+## Run
 
+```bash
+make mesh
+make waves-mesh
+```
 
-the project has four main parts:
-1. The Package : which contains the global parameters, type definitions, and tasks.
-2. The Routing Logic: which is the brain of the router, it decides the next hop direction.
-3. The Router: which is the core component of the NoC, it takes incoming data packets, figures out where they need to go (North, South, west  or East) and routes them to the correct output port.
-4. The Mesh: which is the network of routers, it simulates how multiple processing units or cores communicate with each other in a chip (many-core architecture).
+`make mesh` needs Icarus Verilog (`iverilog` and `vvp`). `make waves-mesh` opens the dump in GTKWave.
 
-![alt text](image.png)
+## The diagonal
+
+The test sends one packet from `(0,0)` to `(2,2)`. Y grows south, so XY walks east, east, then south, south. Four hops, plus one clock in the source router, so the trip takes 5 cycles.
+
+![deadbeef moving from (0,0) to (2,2), one port per clock](docs/xy-diagonal.png)
+
+`deadbeef` shows up on one port per clock: in at `(0,0)`, east out of `(0,0)`, east out of `(1,0)`, south out of `(2,0)`, south out of `(2,1)`, then out at `(2,2)`.
+
+## Packet
+
+36 bits: destination Y, destination X, then a 32-bit payload. The all-zero word means idle, so a packet of all zeros is ignored. If two packets want the same output on the same clock, one of them is dropped. Both are still open.
