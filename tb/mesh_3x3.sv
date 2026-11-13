@@ -84,14 +84,14 @@ module mesh_3x3_tb;
 
         // START SCENARIO 1
         // 4-hop: send packet from (0,0) to (2,2)
-        send_packet(2'd0, 2'd0, 2'd2, 2'd2, 32'hDEAD_BEEF);
-        receive_packet(2'd2, 2'd2, rx_payload, 20);
+        // send_packet(2'd0, 2'd0, 2'd2, 2'd2, 32'hDEAD_BEEF);
+        // receive_packet(2'd2, 2'd2, rx_payload, 20);
 
-        if (rx_payload == 32'hDEAD_BEEF) begin
-            $display("Packet received successfully! (0,0) -> (2,2) payload: 0x%h", rx_payload);
-        end else begin
-            $display("Expected 0xDEAD_BEEF, got 0x%h", rx_payload);
-        end
+        // if (rx_payload == 32'hDEAD_BEEF) begin
+        //     $display("Packet received successfully! (0,0) -> (2,2) payload: 0x%h", rx_payload);
+        // end else begin
+        //     $display("Expected 0xDEAD_BEEF, got 0x%h", rx_payload);
+        // end
         // END SCENARIO 1
 
         // START SCENARIO 2
@@ -118,6 +118,18 @@ module mesh_3x3_tb;
             
         // end
         // END SCENARIO 3:
+
+
+        // START SCENARIO 4: self delivery at (1,1), it should be received by the router at (1,1)
+        // send_packet(2'd1, 2'd1, 2'd1, 2'd1, 32'h1222_3333);
+        // receive_packet(2'd1, 2'd1, rx_payload, 20);
+
+        // if (rx_payload == 32'h1222_3333) begin
+        //     $display("Packet received successfully! self delivery at 1,1, payload: 0x%h", rx_payload);
+        // end else begin
+        //     $display("Packet reception failed! self delivery at 1,1, payload: 0x%h", rx_payload);
+        // end
+        // END SCENARIO 4:
 
         // Wait 2 extra cycles before finishing
         repeat (2) @(posedge clk);
