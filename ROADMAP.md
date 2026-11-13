@@ -63,11 +63,11 @@ Suggested order is the numbering below. Milestone 4 is the first post aimed at p
 
 Make the happy path checked, and make the two known correctness holes explicit in the tests.
 
-- [ ] Add a valid bit. Idle is `valid = 0`, so a zero payload to `(0,0)` is a real flit.
+- [x] ~~Add a valid bit.~~ Skipped. Idle stays the all-zero word. A payload of 0 addressed to `(0,0)` is not a packet this router can send.
 - [ ] Tie off the four borders with generate-if. `make mesh` prints no out-of-bounds warnings.
 - [ ] Drive every testbench input on the falling edge, the way `tb/router_tb.sv` already does.
 - [ ] Self-checking router test: local to N, S, E, W, and West to local. A mismatch exits nonzero.
-- [ ] Self-checking mesh test, all enabled: `(0,0) → (1,0)`, `(0,0) → (0,2)`, `(0,0) → (2,2)`, self-delivery at `(1,1)`, and payload 0 to `(0,0)`.
+- [ ] Self-checking mesh test, all enabled: `(0,0) → (1,0)`, `(0,0) → (0,2)`, `(0,0) → (2,2)`, and self-delivery at `(1,1)`.
 - [ ] One test that documents today’s clash behavior, so it is obvious when Milestone 2 changes it: two flits want East at `(1,1)` on the same clock, and the loser does not arrive.
 - [ ] README: flit layout, `make mesh`, and the hops-plus-one latency. Link this roadmap.
 - [ ] Run the suite in GitHub Actions with Icarus.
@@ -77,7 +77,7 @@ Make the happy path checked, and make the two known correctness holes explicit i
 **Share:**
 
 - Figure: the green Actions run, or the test log with the five routes.
-- Caption: “The 3×3 XY mesh is self-checking. A 4-hop diagonal is 5 cycles, a zero payload to `(0,0)` arrives, and CI fails if a route breaks. A same-cycle output clash still drops a flit. Next is backpressure.”
+- Caption: “The 3×3 XY mesh is self-checking. A 4-hop diagonal is 5 cycles, and CI fails if a route breaks. A same-cycle output clash still drops a flit. Next is backpressure.”
 
 ---
 
